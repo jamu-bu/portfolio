@@ -1,0 +1,47 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+.home ul{
+    text-align: center;
+}
+
+.home li{
+    display:inline-flex;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.portfolio {
+    margin:40px;
+    padding:20px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.navbar{
+    position:fixed;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height:100%;
+}
+
+.navbar li{
+    display: block;
+    line-height: 2;
+}
+
+section {
+    margin: 100px;
+    padding: 50px;
+}
+
+#pfp {
+    border-radius: 100%;
+    width:150px;
+}
