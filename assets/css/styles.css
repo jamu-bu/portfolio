@@ -1,19 +1,34 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+    display: flex;
+    padding-right: 15%;
+
+}
 ul{
     list-style: none;
 }
 
-.home ul{
-    text-align: center;
+a {
+    text-decoration: none;
+    color:rgb(100, 200, 240);
+}
+
+nav {
+    margin:40px;
+    padding:20px;
+    display: flex;
+    justify-content: center;
 }
 
 .home li{
     display:inline-flex;
     line-height: 1.5;
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right:40px;
 }
 
 .portfolio {
@@ -23,25 +38,95 @@ ul{
     text-align: center;
 }
 
-.navbar{
+aside {
+    display: flexbox;
+    flex: 0 0 30%;
+    justify-content: center;
+}
+
+.mainBody {
+    flex: 0 0 70%;
+   
+}
+
+navbar{
     position:fixed;
-    margin: 20px;
-    padding: 10px;
     width: 200px;
-    height:100%;
+    padding: 20px;
+    line-height:2;
+    display: inline-block;
 }
 
-.navbar li{
-    display: block;
-    line-height: 2;
+.menu{
+    
+    margin: 8px;
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
 }
-
+        
 section {
-    margin: 100px;
-    padding: 50px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+footer {
+    text-align: center;
+    margin: 10%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4%;
+}
+
+.projects ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: auto;
+    flex: wrap;
+    align-items: flex-end;
+}
+.projects fig img{
+    border-radius: 20%;
+    width: 200px;
+}
+
+.projects figcaption {
+    text-align: center;
+}
+
+#github a, #email a, #portfolio a{
+    color:white;
+}
+
+#email, #portfolio, #github {padding: 10px;
+    background-color: rgb(100, 200, 240);
+    border: 10px solid rgb(173, 235, 255);
+    border-radius: 50px;
+    color:white;
+    width: 250px;
+    text-align: center;
+    }
 
 #pfp {
     border-radius: 100%;
     width:150px;
 }
+
+#fig1 img {
+    width:300px;
+}
+@media only screen and (max-width:500px){
+    .portfolio {
+        font-size: h1;
+    }
+    navbar {
+       position: relative !important;
+       margin-bottom: 0px !important;
+    }
+    }
