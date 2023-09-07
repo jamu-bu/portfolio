@@ -17,8 +17,8 @@ a {
 }
 
 nav {
-    margin:40px;
-    padding:20px;
+    margin:20px;
+    padding:40px;
     display: flex;
     justify-content: center;
 }
@@ -75,12 +75,18 @@ section {
 footer {
     text-align: center;
     margin: 10%;
+    
+}
+
+footer h3::before, footer h3::after {
+    content: "🩵";
 }
 
 .links{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: 4%;
+    padding:5%;
 }
 
 .projects ul{
@@ -104,13 +110,15 @@ footer {
     color:white;
 }
 
-#email, #portfolio, #github {padding: 10px;
+#email, #portfolio, #github {
     background-color: rgb(100, 200, 240);
     border: 10px solid rgb(173, 235, 255);
     border-radius: 50px;
     color:white;
-    width: 250px;
+    width: 300px;
+    height:50px;
     text-align: center;
+    margin:0px 20px 0px 20px;
     }
 
 #pfp {
@@ -121,6 +129,17 @@ footer {
 #fig1 img {
     width:300px;
 }
+a:hover {
+    color:gold;
+    font-size: larger;
+    transition-timing-function: ease-in;
+}
+
+#pfp:hover {
+    border: 10px solid gold;
+    
+}
+
 @media only screen and (max-width:500px){
     .portfolio {
         font-size: h1;
