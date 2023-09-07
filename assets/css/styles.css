@@ -110,11 +110,12 @@ footer h3::before, footer h3::after {
 
 .projects ul{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     flex-direction: row;
-    width: auto;
+    width: 90%;
     flex: wrap;
     align-items: flex-end;
+    margin-right: 1%;
 }
 .projects fig img{
     border-radius: 20%;
