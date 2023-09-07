@@ -45,7 +45,8 @@ aside {
 }
 
 .mainBody {
-    flex: 0 0 70%;
+    flex: 0 70%;
+    width: 80%;
    
 }
 
@@ -87,6 +88,7 @@ footer h3::before, footer h3::after {
     justify-content: space-between;
     margin: 4%;
     padding:5%;
+    align-items: stretch;
 }
 
 .projects ul{
@@ -105,7 +107,9 @@ footer h3::before, footer h3::after {
 .projects figcaption {
     text-align: center;
 }
-
+.projects fig img:hover {
+    border: 10px solid lightblue;
+}
 #github a, #email a, #portfolio a{
     color:white;
 }
