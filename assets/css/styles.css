@@ -3,8 +3,6 @@
 }
 
 header {
-    display: flexbox;
-    justify-content: space-evenly;
     align-items: center;
 }
 body {
@@ -96,6 +94,7 @@ footer {
     display: flexbox;
     justify-content: center;
     text-align: center;
+    margin-right: 20%;
 }
 
 footer h3::before, footer h3::after {
@@ -228,5 +227,6 @@ button:hover,#pfp:hover {
   @media screen and (max-width: 576px) {
     footer {
         color:rgb(100, 200, 240);
+
     }
 }
