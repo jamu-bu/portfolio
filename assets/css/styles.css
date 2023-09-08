@@ -47,13 +47,15 @@ nav {
 }
 
 .portfolio {
-    margin:3%;
-    padding:1%;
     font-size: 400%;
-    justify-content: center;
-    text-align: center;
     width: 80%;
     white-space: nowrap;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+    margin-left: 6%;
 }
 
 aside {
