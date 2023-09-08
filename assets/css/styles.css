@@ -10,7 +10,7 @@ header {
 body {
     display: flex;
     padding-right: 5%;
-    margin-right: 10%;
+    margin-right: 5%;
 
 }
 ul{
@@ -29,7 +29,7 @@ nav {
 .home {
     list-style:none;
     margin: 1%;
-    margin-left: 4%;
+    margin-left: 2%;
     padding:1%;
     overflow: hidden;
 }
@@ -39,6 +39,7 @@ nav {
     float: left;
     margin:0 5%;
     justify-content: center;
+    flex: 0 0 100%;
 }
 
 .home li a{
@@ -50,10 +51,11 @@ nav {
 .portfolio {
     margin:3%;
     padding:1%;
-    font-size: 60px;
+    font-size: 400%;
     justify-content: center;
     text-align: center;
     width: 80%;
+    white-space: nowrap;
 }
 
 aside {
@@ -70,10 +72,10 @@ aside {
 
 navbar{
     position:fixed;
-    width: 30%;
     padding: 20px;
     line-height:2;
     display: inline-block;
+    overflow: hidden;
 }
 
 .menu{
@@ -91,21 +93,23 @@ section {
 }
 
 footer {
+    display: flexbox;
+    justify-content: center;
     text-align: center;
-    margin: 10%;
-    
 }
 
 footer h3::before, footer h3::after {
-    content: "🩵";
+    content: " 🩵 ";
 }
 
 .links{
-    display: flex;
+   display: flex;
     justify-content: space-between;
-    margin: 4%;
-    padding:5%;
-    align-items: stretch;
+    margin: 3%;
+    padding:2%;
+    margin-top: 0;
+    width: 70%;
+    flex-wrap: wrap;
 }
 
 .projects ul{
@@ -113,8 +117,7 @@ footer h3::before, footer h3::after {
     justify-content:space-between;
     flex-direction: row;
     width: 90%;
-    flex: wrap;
-    align-items: flex-end;
+    flex-wrap: wrap;
     margin-right: 1%;
 }
 .projects fig img{
@@ -132,15 +135,23 @@ footer h3::before, footer h3::after {
     color:white;
 }
 
-#email, #portfolio, #github {
+#github, #email, #portfolio{
+    margin:3%;
+    width: 24%;
+    padding:auto;
+}
+
+
+
+button {
+    display: inline-block;
     background-color: rgb(100, 200, 240);
     border: 10px solid rgb(173, 235, 255);
     border-radius: 50px;
     color:white;
-    width: 300px;
-    height:50px;
-    text-align: center;
-    margin:0px 20px 0px 20px;
+    margin:0px 2% 0px 2%;
+    width: 125%;
+    padding:1%;
     }
 
 #pfp {
@@ -152,22 +163,64 @@ footer h3::before, footer h3::after {
     width:300px;
 }
 a:hover {
+    text-decoration: underline;
     color:gold;
     font-size: larger;
     transition-timing-function: ease-in;
 }
 
-#pfp:hover {
+button:hover,#pfp:hover {
     border: 10px solid gold;
     
 }
 
-@media only screen and (max-width:500px){
-    .portfolio {
-        font-size: h1;
+#ContactMe, #MyWork, #AboutMe {
+    width:80%;
+}
+
+.row2 {
+    height:200px;
+    width: 200px;
+}
+
+#image {
+    width: 100%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    body{
+        flex: 60%;
+      }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    aside {
+      flex: 0 0 0%;
+      display: none;
     }
-    navbar {
-       position: relative !important;
-       margin-bottom: 0px !important;
+    .mainBody{
+        flex: 1 0 100%;
+        margin: 15%;
     }
+    .portfolio{
+        flex:0 2 100%;
+        font-size: 182%;
+        margin: 0;
     }
+    .links {
+        flex-direction: column;
+    }
+    button {
+        width: 500%;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    
