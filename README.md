@@ -21,28 +21,28 @@ Will bring you to that portion of the webpage where "My Work" is displayed.
     ![alt text](assets/images/Screenshot3.png)
 
 Hovering over "Prework-Study Guide" will create an outline around the image and caption and Selecting will open the page in a new window.
-```md
+    ```md
     ![alt text](assets/images/Screenshot5.png)
 
 
 Selecting "Contact Me" will bring you to the section of my webpage entitled "Contact Me"
-```md
+    ```md
     ![alt text](assets/images/Screenshot4.png)
 
 Selecting the Email button will prompt the browser to open an email query
-```md
+    ```md
     ![alt text](assets/images/Screenshot6.png)
 
 Selecting the Github button will open my github page in a new browser
-```md
+    ```md
     ![alt text](assets/images/Screenshot7.png)
 
 When browser window is minimized, sidebar disappears, horizontal navigation links are stacked in a column,
-```md
+    ```md
     ![alt text](assets/images/Screenshot8.png)
 
 When browser window is minimized, buttons are displayed stacked in a column verus horizontally in a row. 
-```md
+    ```md
     ![alt text](assets/images/Screenshot9.png)
 Please make sure to update tests as appropriate.
 
