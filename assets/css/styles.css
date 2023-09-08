@@ -23,7 +23,8 @@ a {
 }
 
 nav {
-    width:auto;
+    width:85%;
+    display: inline-block;
 }
 
 .home {
@@ -43,7 +44,7 @@ nav {
 }
 
 .home li a{
-    display: block;
+    display: flex;
     padding: 1% 3%;
     text-align: center;
 }
@@ -165,7 +166,7 @@ button {
 a:hover {
     text-decoration: underline;
     color:gold;
-    font-size: larger;
+    font-size: 105%;
     transition-timing-function: ease-in;
 }
 
