@@ -228,6 +228,6 @@ button:hover,#pfp:hover {
   @media screen and (max-width: 576px) {
     footer {
         color:rgb(100, 200, 240);
-
+        margin-right: 20%;
     }
 }
