@@ -229,5 +229,6 @@ button:hover,#pfp:hover {
     footer {
         color:rgb(100, 200, 240);
         margin-right: 20%;
+        padding-right: 10%;
     }
 }
