@@ -23,19 +23,18 @@ a {
 }
 
 nav {
-    width:85%;
-    display: inline-block;
+    margin:1%;
+    width:70%;
+    display: inline;
 }
 
 .home {
     list-style:none;
     margin: 1%;
-    margin-left: 2%;
     padding:1%;
-    overflow: hidden;
+    line-height: 1.5;
 }
 .home li{
-    line-height: 1.5;
     font-size: 20px;
     float: left;
     margin:0 5%;
@@ -219,6 +218,9 @@ button:hover,#pfp:hover {
     }
     button {
         width: 500%;
+    }
+    nav {
+        display: inline-block;
     }
   }
   
