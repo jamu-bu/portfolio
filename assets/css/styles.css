@@ -224,4 +224,7 @@ button:hover,#pfp:hover {
   
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
-    
+    footer {
+        color:rgb(100, 200, 240);
+    }
+}
